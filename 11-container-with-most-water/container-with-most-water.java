@@ -9,20 +9,15 @@ class Solution {
 
             if(height[i] < height[j]) {
                 area = height[i] * (j - i);
+                i++;
             }
             else {
                 area = height[j] * (j - i);
+                j--;
             }
 
             if(area > max) {
                 max = area;
-            }
-
-            if(height[i] < height[j]) {
-                i++;
-            }
-            else {
-                j--;
             }
         }
 
