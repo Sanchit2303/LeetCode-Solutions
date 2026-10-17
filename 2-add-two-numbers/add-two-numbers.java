@@ -26,8 +26,7 @@ class Solution {
             if (head == null) {
                 head = new ListNode(digit);
                 temp = head;
-            }
-            else {
+            } else {
                 temp.next = new ListNode(digit);
                 temp = temp.next;
             }
